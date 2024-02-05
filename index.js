@@ -1,3 +1,9 @@
+window.onload = function() {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        // Jeśli urządzenie jest urządzeniem mobilnym, ukryj treść strony i wyświetl komunikat.
+        document.body.innerHTML = '<div class="container"><h1>Unsupported Mobile Devices</h1><p>Sorry, this website does not support mobile devices yet</p></div>';
+    }
+};
 function OPW(liczba) {
     if (liczba >= 0) {
         var wysokoscEkranu = window.innerHeight;
